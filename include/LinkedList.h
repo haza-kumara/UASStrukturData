@@ -10,9 +10,9 @@ struct list_node {
 };
 
 // komen disini
-void ll_insert (list_node*& head, const contact& k);
-void ll_remove (list_node*& head, const std::string& nama);
-void ll_display (list_node* head);
+void list_insert (list_node*& head, const contact& k);
+void list_remove (list_node*& head, const std::string& nama);
+void list_display (list_node* head);
 list_node* search(list_node* head, const std::string& nama);
 
 
