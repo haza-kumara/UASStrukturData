@@ -327,7 +327,7 @@ void updateContact(Node*& head) {
     std::cout << "\n  Data kontak saat ini:\n";
     std::cout << "  " << std::string(30, '-') << "\n";
     printKontak(target->data);
-    std::cout << "  " << std::string(30, '-') << "\n";q
+    std::cout << "  " << std::string(30, '-') << "\n";
     std::cout << "  (Tekan Enter tanpa mengetik untuk mempertahankan data lama)\n\n";
 
     // Buat salinan data lama untuk diedit
