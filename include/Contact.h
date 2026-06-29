@@ -3,22 +3,13 @@
 
 #include <string>
 
-// ==============================================================
-// Struct Contact
-// Menyimpan satu data kontak. Menggunakan struct (bukan class)
-// sesuai paradigma pemrograman prosedural.
-// ==============================================================
 struct Contact {
-    int         id;      // ID unik, digenerate otomatis
+    int         id;     
     std::string nama;
     std::string no_tlp;
     std::string email;
     std::string alamat;
 };
-
-// ==============================================================
-// Deklarasi fungsi utilitas kontak
-// ==============================================================
 
 // Menampilkan satu kontak ke layar secara detail
 void printKontak(const Contact& c);

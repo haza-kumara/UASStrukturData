@@ -3,9 +3,6 @@
 #include <iostream>
 #include <cctype>    // std::isdigit
 
-// ==============================================================
-// Menampilkan seluruh field satu kontak secara detail
-// ==============================================================
 void printKontak(const Contact& c) {
     std::cout << "  ID     : " << c.id     << "\n";
     std::cout << "  Nama   : " << c.nama   << "\n";
@@ -14,13 +11,7 @@ void printKontak(const Contact& c) {
     std::cout << "  Alamat : " << c.alamat << "\n";
 }
 
-// ==============================================================
-// Validasi nomor HP
-// Aturan: tidak boleh kosong, hanya boleh mengandung digit,
-//         tanda '-', '+', dan spasi.
-// Contoh valid : "0812-3456-7890", "+62 812 345 6789"
-// Contoh tidak : "abc", "08123x"
-// ==============================================================
+
 bool validatePhone(const std::string& phone) {
     if (phone.empty()) return false;
     for (char c : phone) {
@@ -33,13 +24,6 @@ bool validatePhone(const std::string& phone) {
     return true;
 }
 
-// ==============================================================
-// Validasi email
-// Aturan: tidak boleh kosong, harus mengandung '@',
-//         dan '@' tidak boleh di posisi pertama atau terakhir.
-// Contoh valid : "user@email.com", "a@b"
-// Contoh tidak : "@email.com", "useremail.com", ""
-// ==============================================================
 bool validateEmail(const std::string& email) {
     if (email.empty()) return false;
     size_t atPos = email.find('@');

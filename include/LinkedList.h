@@ -3,20 +3,13 @@
 
 #include "Contact.h"
 
-// ==============================================================
-// Struct Node — satu elemen Singly Linked List
-// Setiap Node menyimpan satu Contact dan pointer ke Node berikutnya.
-// ==============================================================
+
+
 struct Node {
     Contact data;   // data kontak yang disimpan
     Node*   next;   // pointer ke node selanjutnya (nullptr jika terakhir)
 };
 
-// ==============================================================
-// Deklarasi fungsi Linked List
-// Semua fungsi menerima pointer ke head melalui referensi (&)
-// agar bisa memodifikasi head secara langsung.
-// ==============================================================
 
 // Menyisipkan kontak baru di akhir list (append)
 void listInsert(Node*& head, const Contact& c);
