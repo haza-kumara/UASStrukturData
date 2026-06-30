@@ -11,7 +11,7 @@ struct Node {
 };
 
 
-// Menyisipkan kontak baru di akhir list (append)
+// Menyisipkan kontak baru di akhir list 
 void listInsert(Node*& head, const Contact& c);
 
 // Menghapus node dengan ID tertentu

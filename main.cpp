@@ -20,7 +20,6 @@ void clearScreen() {
 
 void pause() {
     std::cout << "\n  Tekan Enter untuk melanjutkan...";
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cin.get();
 }
 
